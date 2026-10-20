@@ -6,6 +6,14 @@ typedef struct {
     char name[50];
     int population;
     int threatLevel;
-}
+}Habitat;
+
+typedef struct{
+    int source;
+    int destination;
+    int cost;
+    int capacity;
+    int available;
+}Corridor;
 
 #endif

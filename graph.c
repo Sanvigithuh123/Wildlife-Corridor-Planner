@@ -2,6 +2,6 @@
 #include "graph.h"
 
 void displayGraph(Corridor edges[], int edgeCount){
-    printf("\nAvailable Wildlife Corridors\n: ");
+    printf("\nAvailable Wildlife Corridors:\n ");
     
 }

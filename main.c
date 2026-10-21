@@ -23,8 +23,18 @@ int main(){
         }
         switch(choice){
             case 1:
-            displayGraph()
-        }
+            displayGraph(edges,edgeCount);
+            break;
+
+            case 0:
+            printf("Exiting\n");
+            break;
+
+            default:
+            printf("Invalid Input\n");
+
+        }while(choice!=0);
+        
     }
 
     return 0;

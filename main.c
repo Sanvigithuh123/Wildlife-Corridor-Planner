@@ -17,6 +17,10 @@ int main(){
         printf("\n====WILDLIFE CORRIDOR PLANNER====\n");
         printf("1. Display Corridors\n");
         printf("0. Exit\n");
+        if(scanf("%d",&choice)!=1){
+            printf("Invalid Input\n");
+            return 1;
+        }
         
     }
 

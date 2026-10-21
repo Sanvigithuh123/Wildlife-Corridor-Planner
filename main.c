@@ -11,9 +11,12 @@ int main(){
         {2, 3, 5, 25, 1},
         {0, 3, 7, 60, 1}
     };
-    int edgeCount=sizeof(edges)/sizeof(edges[0])
+    int edgeCount=sizeof(edges)/sizeof(edges[0]);
     int choice;
-    
+    do{
+        printf("\n====WILDLIFE CORRIDOR PLANNER====\n");
+        
+    }
 
     return 0;
 }

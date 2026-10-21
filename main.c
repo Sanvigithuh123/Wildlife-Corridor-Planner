@@ -21,7 +21,10 @@ int main(){
             printf("Invalid Input\n");
             return 1;
         }
-        
+        switch(choice){
+            case 1:
+            displayGraph()
+        }
     }
 
     return 0;

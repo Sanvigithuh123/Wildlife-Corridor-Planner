@@ -15,6 +15,8 @@ int main(){
     int choice;
     do{
         printf("\n====WILDLIFE CORRIDOR PLANNER====\n");
+        printf("1. Display Corridors\n");
+        printf("0. Exit\n");
         
     }
 

@@ -33,9 +33,9 @@ int main(){
             default:
             printf("Invalid Input\n");
 
-        }while(choice!=0);
-        
-    }
+        }
+
+    }while(choice!=0);
 
     return 0;
 }

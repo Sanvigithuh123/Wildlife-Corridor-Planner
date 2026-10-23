@@ -1,41 +1,68 @@
+
 #include <stdio.h>
-#include "graph.h"
 #include "habitat.h"
+#include "graph.h"
+#include "data_loader.h"
 
-int main(){
+int main() {
 
-    Corridor edges[] = {
-        {0, 1, 4, 50, 1},
-        {0, 2, 2, 30, 1},
-        {1, 3, 3, 40, 1},
-        {2, 3, 5, 25, 1},
-        {0, 3, 7, 60, 1}
-    };
-    int edgeCount=sizeof(edges)/sizeof(edges[0]);
+    Habitat habitats[MAX_HABITATS];
+    Corridor corridors[MAX_CORRIDORS];
+
+    int habitatCount = loadHabitats(
+        "data/habitats.csv",
+        habitats,
+        MAX_HABITATS
+    );
+
+    int corridorCount = loadCorridors(
+        "data/corridors.csv",
+        corridors,
+        MAX_CORRIDORS
+    );
+
+    if (habitatCount <= 0 || corridorCount < 0) {
+        printf("Failed to load project data.\n");
+        return 1;
+    }
+
+    printf("Data loaded successfully!\n");
+    printf("Habitats: %d\n", habitatCount);
+    printf("Corridors: %d\n", corridorCount);
+
     int choice;
-    do{
-        printf("\n====WILDLIFE CORRIDOR PLANNER====\n");
-        printf("1. Display Corridors\n");
+
+    do {
+        printf("\n===== WILDLIFE CORRIDOR PLANNER =====\n");
+        printf("1. Display Habitats\n");
+        printf("2. Display Corridors\n");
         printf("0. Exit\n");
-        if(scanf("%d",&choice)!=1){
-            printf("Invalid Input\n");
+        printf("Enter choice: ");
+
+        if (scanf("%d", &choice) != 1) {
+            printf("Invalid input.\n");
             return 1;
         }
-        switch(choice){
+
+        switch (choice) {
+
             case 1:
-            displayGraph(edges,edgeCount);
-            break;
+                displayHabitats(habitats, habitatCount);
+                break;
+
+            case 2:
+                displayGraph(corridors, corridorCount);
+                break;
 
             case 0:
-            printf("Exiting\n");
-            break;
+                printf("Exiting program...\n");
+                break;
 
             default:
-            printf("Invalid Input\n");
-
+                printf("Invalid choice!\n");
         }
 
-    }while(choice!=0);
+    } while (choice != 0);
 
     return 0;
 }

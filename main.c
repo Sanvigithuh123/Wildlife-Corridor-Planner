@@ -4,6 +4,7 @@
 #include "graph.h"
 #include "data_loader.h"
 #include "kruskal.h"
+#include "prim.h"
 
 int main() {
 
@@ -38,6 +39,7 @@ int main() {
         printf("1. Display Habitats\n");
         printf("2. Display Corridors\n");
         printf("3. Find Minimum Cost Corridors (Kruskal)\n");
+        printf("4. Find Minimum Cost Corridors (Prim)\n");
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -64,6 +66,15 @@ int main() {
                     corridorCount
                 );
                 break;
+            
+            case 4:
+                primMST(
+                habitats,
+        habitatCount,
+        corridors,
+        corridorCount
+    );
+    break;
 
             case 0:
                 printf("Exiting program...\n");

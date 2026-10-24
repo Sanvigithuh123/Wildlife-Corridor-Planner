@@ -3,6 +3,7 @@
 #include "habitat.h"
 #include "graph.h"
 #include "data_loader.h"
+#include "kruskal.h"
 
 int main() {
 
@@ -26,7 +27,7 @@ int main() {
         return 1;
     }
 
-    printf("Data loaded successfully!\n");
+    printf("\nData loaded successfully!\n");
     printf("Habitats: %d\n", habitatCount);
     printf("Corridors: %d\n", corridorCount);
 
@@ -36,6 +37,7 @@ int main() {
         printf("\n===== WILDLIFE CORRIDOR PLANNER =====\n");
         printf("1. Display Habitats\n");
         printf("2. Display Corridors\n");
+        printf("3. Find Minimum Cost Corridors (Kruskal)\n");
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -52,6 +54,15 @@ int main() {
 
             case 2:
                 displayGraph(corridors, corridorCount);
+                break;
+
+            case 3:
+                kruskalMST(
+                    habitats,
+                    habitatCount,
+                    corridors,
+                    corridorCount
+                );
                 break;
 
             case 0:

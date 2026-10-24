@@ -78,32 +78,32 @@ int main() {
             );
             break;
 
-case 5: {
-    int sourceId, destinationId;
+            case 5: {
+                int sourceId, destinationId;
 
-    printf("Enter source habitat ID: ");
-    if (scanf("%d", &sourceId) != 1) {
-        printf("Invalid source ID.\n");
-        return 1;
-    }
+                printf("Enter source habitat ID: ");
+                if (scanf("%d", &sourceId) != 1) {
+                    printf("Invalid source ID.\n");
+                    return 1;
+                }
 
-    printf("Enter destination habitat ID: ");
-    if (scanf("%d", &destinationId) != 1) {
-        printf("Invalid destination ID.\n");
-        return 1;
-    }
+                printf("Enter destination habitat ID: ");
+                if (scanf("%d", &destinationId) != 1) {
+                    printf("Invalid destination ID.\n");
+                    return 1;
+                }
 
-    dijkstra(
-        habitats,
-        habitatCount,
-        corridors,
-        corridorCount,
-        sourceId,
-        destinationId
-    );
+                dijkstra(
+                    habitats,
+                    habitatCount,
+                    corridors,
+                    corridorCount,
+                    sourceId,
+                    destinationId
+                );
 
-    break;
-}
+                break;
+            }
 
             case 0:
                 printf("Exiting program...\n");

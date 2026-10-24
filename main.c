@@ -5,6 +5,7 @@
 #include "data_loader.h"
 #include "kruskal.h"
 #include "prim.h"
+#include "dijkstra.h"
 
 int main() {
 
@@ -40,6 +41,7 @@ int main() {
         printf("2. Display Corridors\n");
         printf("3. Find Minimum Cost Corridors (Kruskal)\n");
         printf("4. Find Minimum Cost Corridors (Prim)\n");
+        printf("5. Find Shortest Wildlife Route (Dijkstra)\n");
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -75,6 +77,33 @@ int main() {
                 corridorCount
             );
             break;
+
+case 5: {
+    int sourceId, destinationId;
+
+    printf("Enter source habitat ID: ");
+    if (scanf("%d", &sourceId) != 1) {
+        printf("Invalid source ID.\n");
+        return 1;
+    }
+
+    printf("Enter destination habitat ID: ");
+    if (scanf("%d", &destinationId) != 1) {
+        printf("Invalid destination ID.\n");
+        return 1;
+    }
+
+    dijkstra(
+        habitats,
+        habitatCount,
+        corridors,
+        corridorCount,
+        sourceId,
+        destinationId
+    );
+
+    break;
+}
 
             case 0:
                 printf("Exiting program...\n");

@@ -70,11 +70,11 @@ int main() {
             case 4:
                 primMST(
                 habitats,
-        habitatCount,
-        corridors,
-        corridorCount
-    );
-    break;
+                habitatCount,
+                corridors,
+                corridorCount
+            );
+            break;
 
             case 0:
                 printf("Exiting program...\n");

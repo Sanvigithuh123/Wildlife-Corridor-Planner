@@ -36,10 +36,15 @@ int main() {
         printf("Failed to load project data.\n");
         return 1;
     }
+    if (interventionCount < 0) {
+        printf("Failed to load interventions.\n");
+        return 1;
+    }
 
     printf("\nData loaded successfully!\n");
     printf("Habitats: %d\n", habitatCount);
     printf("Corridors: %d\n", corridorCount);
+    printf("Interventions loaded: %d\n", interventionCount);
 
     int choice;
 
@@ -50,6 +55,7 @@ int main() {
         printf("3. Find Minimum Cost Corridors (Kruskal)\n");
         printf("4. Find Minimum Cost Corridors (Prim)\n");
         printf("5. Find Shortest Wildlife Route (Dijkstra)\n");
+        printf("6. Optimize Conservation Budget (0/1 Knapsack)\n");
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -112,6 +118,26 @@ int main() {
 
                 break;
             }
+
+case 6: {
+    int budget;
+
+    printf("Enter conservation budget (in lakh): ");
+
+    if (scanf("%d", &budget) != 1) {
+        printf("Invalid budget input.\n");
+        return 1;
+    }
+
+    optimizeBudget(
+        interventions,
+        interventionCount,
+        budget
+    );
+
+    break;
+}
+
 
             case 0:
                 printf("Exiting program...\n");

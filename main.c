@@ -205,70 +205,71 @@ int main() {
         }
 
 
-case 9: {
-    Habitat sorted[MAX_HABITATS];
-    int targetId;
-    int method;
+        case 9: {
+            Habitat sorted[MAX_HABITATS];
+            int targetId;
+            int method;
 
-    memcpy(
-        sorted,
-        habitats,
-        habitatCount * sizeof(Habitat)
-    );
+            memcpy(
+                sorted,
+                habitats,
+                habitatCount * sizeof(Habitat)
+            );
 
-    // Binary search requires sorted IDs
-    mergeSort(
-        sorted,
-        habitatCount,
-        SORT_BY_ID
-    );
+            // Binary search requires sorted IDs
+            mergeSort(
+                sorted,
+                habitatCount,
+                SORT_BY_ID
+            );
 
-    printf("Enter habitat ID to search: ");
+            printf("Enter habitat ID to search: ");
 
-    if (scanf("%d", &targetId) != 1) {
-        printf("Invalid habitat ID.\n");
-        break;
-    }
+            if (scanf("%d", &targetId) != 1) {
+                printf("Invalid habitat ID.\n");
+                break;
+            }
 
-    printf("1. Iterative Binary Search\n");
-    printf("2. Recursive Binary Search\n");
-    printf("Enter method: ");
+            printf("1. Iterative Binary Search\n");
+            printf("2. Recursive Binary Search\n");
+            printf("Enter method: ");
 
-    if (scanf("%d", &method) != 1 ||
-        (method != 1 && method != 2)) {
-        printf("Invalid search method.\n");
-        break;
-    }
+            if (scanf("%d", &method) != 1 ||
+                (method != 1 && method != 2)) {
+                printf("Invalid search method.\n");
+                break;
+            }
 
-    int index;
+            int index;
 
-    if (method == 1) {
-        index = binarySearchIterative(
-            sorted, habitatCount, targetId
-        );
-    }
-    else {
-        index = binarySearchRecursive(
-            sorted, habitatCount, targetId
-        );
-    }
+            if (method == 1) {
+                index = binarySearchIterative(
+                    sorted, habitatCount, targetId
+                );
+            }
+            else {
+                index = binarySearchRecursive(
+                    sorted, habitatCount, targetId
+                );
+            }
 
-    if (index == -1) {
-        printf("Habitat not found.\n");
-    }
-    else {
-        printf("\nHabitat Found!\n");
-        printf("ID: %d\n", sorted[index].id);
-        printf("Name: %s\n", sorted[index].name);
-        printf("Population: %d\n",
-               sorted[index].population);
-        printf("Threat Level: %d\n",
-               sorted[index].threatLevel);
-    }
+            if (index == -1) {
+                printf("Habitat not found.\n");
+            }
+            else {
+                printf("\nHabitat Found!\n");
+                printf("ID: %d\n", sorted[index].id);
+                printf("Name: %s\n", sorted[index].name);
+                printf("Population: %d\n",
+                    sorted[index].population);
+                printf("Threat Level: %d\n",
+                    sorted[index].threatLevel);
+            }
 
-    break;
-}
+            break;
+        }
 
+        
 
             case 0:
                 printf("Exiting program...\n");

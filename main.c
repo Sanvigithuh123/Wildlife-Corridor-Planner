@@ -294,6 +294,69 @@ int main() {
         }
 
 
+        case 11: {
+            double population;
+            double growthRate;
+            int years;
+
+            printf("Enter initial population: ");
+
+            if (scanf("%lf", &population) != 1) {
+                printf("Invalid population.\n");
+                break;
+            }
+
+            printf("Enter annual growth rate (percentage): ");
+
+            if (scanf("%lf", &growthRate) != 1) {
+                printf("Invalid growth rate.\n");
+                break;
+            }
+
+            printf("Enter number of years: ");
+
+            if (scanf("%d", &years) != 1) {
+                printf("Invalid years.\n");
+                break;
+            }
+
+            populationProjection(
+                population,
+                growthRate / 100.0,
+                years
+            );
+
+            break;
+        }
+
+
+        case 12: {
+            int matrix[MAX_CENTERS][MAX_CENTERS] = {
+                {0, 1, 1, 0},
+                {0, 0, 1, 0},
+                {0, 0, 0, 0},
+                {0, 1, 1, 0}
+            };
+
+            int n = 4;
+
+            int result = findCelebrity(matrix, n);
+
+            printf("\n===== CELEBRITY DISCOVERY =====\n");
+
+            if (result == -1) {
+                printf("No central reference center found.\n");
+            }
+            else {
+                printf("Central reference center: %c\n",
+                    'A' + result);
+            }
+
+            break;
+        }
+
+
+
             case 0:
                 printf("Exiting program...\n");
                 break;

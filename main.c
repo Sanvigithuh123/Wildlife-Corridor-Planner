@@ -119,24 +119,24 @@ int main() {
                 break;
             }
 
-case 6: {
-    int budget;
+        case 6: {
+            int budget;
 
-    printf("Enter conservation budget (in lakh): ");
+            printf("Enter conservation budget (in lakh): ");
 
-    if (scanf("%d", &budget) != 1) {
-        printf("Invalid budget input.\n");
-        return 1;
-    }
+            if (scanf("%d", &budget) != 1) {
+                printf("Invalid budget input.\n");
+                return 1;
+            }
 
-    optimizeBudget(
-        interventions,
-        interventionCount,
-        budget
-    );
+            optimizeBudget(
+                interventions,
+                interventionCount,
+                budget
+            );
 
-    break;
-}
+            break;
+        }
 
 
             case 0:

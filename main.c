@@ -143,6 +143,132 @@ int main() {
             break;
         }
 
+        case 7: {
+            Habitat sorted[MAX_HABITATS];
+            int sortBy;
+
+            memcpy(
+                sorted,
+                habitats,
+                habitatCount * sizeof(Habitat)
+            );
+
+            printf("\nSort habitats by:\n");
+            printf("1. ID\n");
+            printf("2. Population\n");
+            printf("3. Threat Level\n");
+            printf("Enter choice: ");
+
+            if (scanf("%d", &sortBy) != 1 ||
+                sortBy < 1 || sortBy > 3) {
+                printf("Invalid sorting choice.\n");
+                break;
+            }
+
+            mergeSort(sorted, habitatCount, sortBy);
+
+            printf("\n===== MERGE SORT RESULT =====\n");
+            displayHabitats(sorted, habitatCount);
+
+            break;
+        }
+
+
+        case 8: {
+            Habitat sorted[MAX_HABITATS];
+            int sortBy;
+
+            memcpy(
+                sorted,
+                habitats,
+                habitatCount * sizeof(Habitat)
+            );
+
+            printf("\nSort habitats by:\n");
+            printf("1. ID\n");
+            printf("2. Population\n");
+            printf("3. Threat Level\n");
+            printf("Enter choice: ");
+
+            if (scanf("%d", &sortBy) != 1 ||
+                sortBy < 1 || sortBy > 3) {
+                printf("Invalid sorting choice.\n");
+                break;
+            }
+
+            quickSort(sorted, habitatCount, sortBy);
+
+            printf("\n===== QUICK SORT RESULT =====\n");
+            displayHabitats(sorted, habitatCount);
+
+            break;
+        }
+
+
+case 9: {
+    Habitat sorted[MAX_HABITATS];
+    int targetId;
+    int method;
+
+    memcpy(
+        sorted,
+        habitats,
+        habitatCount * sizeof(Habitat)
+    );
+
+    // Binary search requires sorted IDs
+    mergeSort(
+        sorted,
+        habitatCount,
+        SORT_BY_ID
+    );
+
+    printf("Enter habitat ID to search: ");
+
+    if (scanf("%d", &targetId) != 1) {
+        printf("Invalid habitat ID.\n");
+        break;
+    }
+
+    printf("1. Iterative Binary Search\n");
+    printf("2. Recursive Binary Search\n");
+    printf("Enter method: ");
+
+    if (scanf("%d", &method) != 1 ||
+        (method != 1 && method != 2)) {
+        printf("Invalid search method.\n");
+        break;
+    }
+
+    int index;
+
+    if (method == 1) {
+        index = binarySearchIterative(
+            sorted, habitatCount, targetId
+        );
+    }
+    else {
+        index = binarySearchRecursive(
+            sorted, habitatCount, targetId
+        );
+    }
+
+    if (index == -1) {
+        printf("Habitat not found.\n");
+    }
+    else {
+        printf("\nHabitat Found!\n");
+        printf("ID: %d\n", sorted[index].id);
+        printf("Name: %s\n", sorted[index].name);
+        printf("Population: %d\n",
+               sorted[index].population);
+        printf("Threat Level: %d\n",
+               sorted[index].threatLevel);
+    }
+
+    break;
+}
+
 
             case 0:
                 printf("Exiting program...\n");

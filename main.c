@@ -269,7 +269,6 @@ int main() {
             break;
         }
 
-        
 
             case 0:
                 printf("Exiting program...\n");

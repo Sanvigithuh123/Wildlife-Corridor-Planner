@@ -9,6 +9,9 @@
 #include <string.h>
 #include "sorting.h"
 #include "binary_search.h"
+#include "max_subarray.h"
+#include "fast_power.h"
+#include "celebrity.h"
 
 int main() {
 
@@ -61,6 +64,9 @@ int main() {
         printf("7. Sort Habitats (Merge Sort)\n");
         printf("8. Sort Habitats (Quick Sort)\n");
         printf("9. Search Habitat (Binary Search)\n");
+        printf("10. Analyze Maximum Threat Increase\n");
+        printf("11. Project Wildlife Population (Fast Power)\n");
+        printf("12. Find Central Reference Center (Celebrity)\n");
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -265,6 +271,24 @@ int main() {
                 printf("Threat Level: %d\n",
                     sorted[index].threatLevel);
             }
+
+            break;
+        }
+
+
+        case 10: {
+            int changes[] = {4, -2, 5, -7, 6, 3, -2};
+
+            int n = sizeof(changes) / sizeof(changes[0]);
+
+            printf("\nDaily Threat Index Changes:\n");
+
+            for (int i = 0; i < n; i++)
+                printf("%d ", changes[i]);
+
+            printf("\n");
+
+            maximumSubarray(changes, n);
 
             break;
         }

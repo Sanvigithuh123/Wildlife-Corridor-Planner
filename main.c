@@ -6,11 +6,13 @@
 #include "kruskal.h"
 #include "prim.h"
 #include "dijkstra.h"
+#include "knapsack.h"
 
 int main() {
 
     Habitat habitats[MAX_HABITATS];
     Corridor corridors[MAX_CORRIDORS];
+    Intervention interventions[MAX_INTERVENTIONS];
 
     int habitatCount = loadHabitats(
         "data/habitats.csv",

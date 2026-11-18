@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include "habitat.h"
 #include "graph.h"
@@ -7,6 +6,9 @@
 #include "prim.h"
 #include "dijkstra.h"
 #include "knapsack.h"
+#include <string.h>
+#include "sorting.h"
+#include "binary_search.h"
 
 int main() {
 
@@ -56,6 +58,9 @@ int main() {
         printf("4. Find Minimum Cost Corridors (Prim)\n");
         printf("5. Find Shortest Wildlife Route (Dijkstra)\n");
         printf("6. Optimize Conservation Budget (0/1 Knapsack)\n");
+        printf("7. Sort Habitats (Merge Sort)\n");
+        printf("8. Sort Habitats (Quick Sort)\n");
+        printf("9. Search Habitat (Binary Search)\n");
         printf("0. Exit\n");
         printf("Enter choice: ");
 

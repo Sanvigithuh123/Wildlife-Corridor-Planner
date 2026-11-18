@@ -26,6 +26,12 @@ int main() {
         MAX_CORRIDORS
     );
 
+    int interventionCount = loadInterventions(
+        "data/interventions.csv",
+        interventions,
+        MAX_INTERVENTIONS
+    );
+
     if (habitatCount <= 0 || corridorCount < 0) {
         printf("Failed to load project data.\n");
         return 1;

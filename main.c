@@ -12,6 +12,9 @@
 #include "max_subarray.h"
 #include "scheduling.h"
 #include "huffman.h"
+#include "lcs.h"
+#include "bellman_ford.h"
+#include "floyd_warshall.h"
 
 int main() {
 
@@ -79,7 +82,10 @@ int main() {
         printf("11. Conservation Activity Selection\n");
         printf("12. Minimum Conservation Teams (Interval Partitioning)\n");
         printf("13. Analyze Monitoring Data Compression (Huffman)\n");
-        
+        printf("14. Compare Wildlife Movement Sequences (LCS)\n");
+        printf("15. Shortest Route (Bellman-Ford)\n");
+        printf("16. All-Pairs Shortest Routes (Floyd-Warshall)\n");
+                
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -328,6 +334,67 @@ int main() {
 
                 break;
             }
+
+
+case 14: {
+    char seq1[101];
+    char seq2[101];
+
+    printf("Enter first habitat movement sequence: ");
+    if (scanf("%100s", seq1) != 1) {
+        printf("Invalid sequence.\n");
+        break;
+    }
+
+    printf("Enter second habitat movement sequence: ");
+    if (scanf("%100s", seq2) != 1) {
+        printf("Invalid sequence.\n");
+        break;
+    }
+
+    longestCommonSubsequence(seq1, seq2);
+    break;
+}
+
+
+case 15: {
+    int sourceId, destinationId;
+
+    printf("Enter source habitat ID: ");
+
+    if (scanf("%d", &sourceId) != 1) {
+        printf("Invalid source ID.\n");
+        break;
+    }
+
+    printf("Enter destination habitat ID: ");
+
+    if (scanf("%d", &destinationId) != 1) {
+        printf("Invalid destination ID.\n");
+        break;
+    }
+
+    bellmanFord(
+        habitats,
+        habitatCount,
+        corridors,
+        corridorCount,
+        sourceId,
+        destinationId
+    );
+
+    break;
+}
+
+
+case 16:
+    floydWarshall(
+        habitats,
+        habitatCount,
+        corridors,
+        corridorCount
+    );
+    break;
 
 
             case 0:

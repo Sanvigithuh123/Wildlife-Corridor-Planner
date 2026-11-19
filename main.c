@@ -18,6 +18,8 @@
 #include "tsp.h"
 #include "subset_sum.h"
 #include "branch_bound.h"
+#include "ford_fulkerson.h"
+#include "bipartite_matching.h"
 
 int main() {
 
@@ -91,6 +93,8 @@ int main() {
         printf("17. Optimize Ranger Inspection Tour (TSP)\n");
         printf("18. Exact Conservation Budget (Subset Sum)\n");
         printf("19. Budget Optimization (Branch-and-Bound)\n");
+        printf("20. Analyze Corridor Capacity (Ford-Fulkerson)\n");
+        printf("21. Assign Conservation Teams (Bipartite Matching)\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");

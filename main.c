@@ -470,6 +470,51 @@ int main() {
             }
 
 
+        case 20: {
+            int sourceId, destinationId;
+
+            printf("Enter source habitat ID: ");
+            if (scanf("%d", &sourceId) != 1) {
+                printf("Invalid source ID.\n");
+                break;
+            }
+
+            printf("Enter destination habitat ID: ");
+            if (scanf("%d", &destinationId) != 1) {
+                printf("Invalid destination ID.\n");
+                break;
+            }
+
+            fordFulkerson(
+                habitats,
+                habitatCount,
+                corridors,
+                corridorCount,
+                sourceId,
+                destinationId
+            );
+
+            break;
+        }
+
+
+        case 21: {
+            int compatibility[MAX_TEAMS][MAX_TASKS] = {
+                {1, 1, 0, 0},
+                {0, 1, 1, 0},
+                {1, 0, 0, 1}
+            };
+
+            maximumBipartiteMatching(
+                3,
+                4,
+                compatibility
+            );
+
+            break;
+        }
+
+
             case 0:
                 printf("Exiting program...\n");
                 break;

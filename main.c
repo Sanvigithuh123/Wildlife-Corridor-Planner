@@ -16,6 +16,8 @@
 #include "bellman_ford.h"
 #include "floyd_warshall.h"
 #include "tsp.h"
+#include "subset_sum.h"
+#include "branch_bound.h"
 
 int main() {
 

@@ -10,7 +10,7 @@
 #include "sorting.h"
 #include "binary_search.h"
 #include "max_subarray.h"
-
+#include "scheduling.h"
 
 int main() {
 

@@ -20,7 +20,7 @@
 #include "branch_bound.h"
 #include "ford_fulkerson.h"
 #include "bipartite_matching.h"
-
+#include "string_matching.h"
 
 static int loadEventSequence(
     const char *filename,

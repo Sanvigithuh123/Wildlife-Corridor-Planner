@@ -336,65 +336,65 @@ int main() {
             }
 
 
-case 14: {
-    char seq1[101];
-    char seq2[101];
+            case 14: {
+                char seq1[101];
+                char seq2[101];
 
-    printf("Enter first habitat movement sequence: ");
-    if (scanf("%100s", seq1) != 1) {
-        printf("Invalid sequence.\n");
-        break;
-    }
+                printf("Enter first habitat movement sequence: ");
+                if (scanf("%100s", seq1) != 1) {
+                    printf("Invalid sequence.\n");
+                    break;
+                }
 
-    printf("Enter second habitat movement sequence: ");
-    if (scanf("%100s", seq2) != 1) {
-        printf("Invalid sequence.\n");
-        break;
-    }
+                printf("Enter second habitat movement sequence: ");
+                if (scanf("%100s", seq2) != 1) {
+                    printf("Invalid sequence.\n");
+                    break;
+                }
 
-    longestCommonSubsequence(seq1, seq2);
-    break;
-}
-
-
-case 15: {
-    int sourceId, destinationId;
-
-    printf("Enter source habitat ID: ");
-
-    if (scanf("%d", &sourceId) != 1) {
-        printf("Invalid source ID.\n");
-        break;
-    }
-
-    printf("Enter destination habitat ID: ");
-
-    if (scanf("%d", &destinationId) != 1) {
-        printf("Invalid destination ID.\n");
-        break;
-    }
-
-    bellmanFord(
-        habitats,
-        habitatCount,
-        corridors,
-        corridorCount,
-        sourceId,
-        destinationId
-    );
-
-    break;
-}
+                longestCommonSubsequence(seq1, seq2);
+                break;
+            }
 
 
-case 16:
-    floydWarshall(
-        habitats,
-        habitatCount,
-        corridors,
-        corridorCount
-    );
-    break;
+            case 15: {
+                int sourceId, destinationId;
+
+                printf("Enter source habitat ID: ");
+
+                if (scanf("%d", &sourceId) != 1) {
+                    printf("Invalid source ID.\n");
+                    break;
+                }
+
+                printf("Enter destination habitat ID: ");
+
+                if (scanf("%d", &destinationId) != 1) {
+                    printf("Invalid destination ID.\n");
+                    break;
+                }
+
+                bellmanFord(
+                    habitats,
+                    habitatCount,
+                    corridors,
+                    corridorCount,
+                    sourceId,
+                    destinationId
+                );
+
+                break;
+            }
+
+
+            case 16:
+                floydWarshall(
+                    habitats,
+                    habitatCount,
+                    corridors,
+                    corridorCount
+                );
+                break;
 
 
             case 0:

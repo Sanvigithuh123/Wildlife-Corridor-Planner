@@ -21,6 +21,46 @@
 #include "ford_fulkerson.h"
 #include "bipartite_matching.h"
 
+
+static int loadEventSequence(
+    const char *filename,
+    char text[],
+    int maxLength
+) {
+    FILE *fp = fopen(filename, "r");
+
+    if (fp == NULL)
+        return -1;
+
+    int count = 0;
+    int ch;
+
+    while ((ch = fgetc(fp)) != EOF) {
+
+        if (ch == '\n' || ch == '\r' ||
+            ch == ' ' || ch == '\t')
+            continue;
+
+        if (count >= maxLength - 1) {
+            fclose(fp);
+            return -1;
+        }
+
+        text[count++] = (char)ch;
+    }
+
+    if (ferror(fp)) {
+        fclose(fp);
+        return -1;
+    }
+
+    text[count] = '\0';
+    fclose(fp);
+
+    return count;
+}
+
+
 int main() {
 
     Habitat habitats[MAX_HABITATS];

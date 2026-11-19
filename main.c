@@ -86,6 +86,7 @@ int main() {
         printf("14. Compare Wildlife Movement Sequences (LCS)\n");
         printf("15. Shortest Route (Bellman-Ford)\n");
         printf("16. All-Pairs Shortest Routes (Floyd-Warshall)\n");
+        printf("17. Optimize Ranger Inspection Tour (TSP)\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -396,6 +397,17 @@ int main() {
                     corridorCount
                 );
                 break;
+
+
+            case 17:
+                solveTSP(
+                    habitats,
+                    habitatCount,
+                    corridors,
+                    corridorCount
+                );
+                break;
+
 
 
             case 0:

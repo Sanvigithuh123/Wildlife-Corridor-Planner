@@ -75,6 +75,8 @@ int main() {
         printf("8. Sort Habitats (Quick Sort)\n");
         printf("9. Search Habitat (Binary Search)\n");
         printf("10. Analyze Maximum Threat Increase\n");
+        printf("11. Conservation Activity Selection\n");
+        printf("12. Minimum Conservation Teams (Interval Partitioning)\n");
         
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -302,6 +304,20 @@ int main() {
             break;
         }
 
+
+case 11:
+    activitySelection(
+        activities,
+        activityCount
+    );
+    break;
+
+case 12:
+    intervalPartitioning(
+        activities,
+        activityCount
+    );
+    break;
 
         
 

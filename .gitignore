@@ -1,0 +1,23 @@
+
+# Compiled executables
+wildlife
+a.out
+*.exe
+
+# Object files
+*.o
+*.d
+
+# macOS
+.DS_Store
+
+# VS Code local configuration
+.vscode/
+
+# Generated output files
+output/*.csv
+output/*.json
+
+# Temporary files
+*.tmp
+*.log

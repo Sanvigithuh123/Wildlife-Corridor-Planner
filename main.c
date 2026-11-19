@@ -89,6 +89,8 @@ int main() {
         printf("15. Shortest Route (Bellman-Ford)\n");
         printf("16. All-Pairs Shortest Routes (Floyd-Warshall)\n");
         printf("17. Optimize Ranger Inspection Tour (TSP)\n");
+        printf("18. Exact Conservation Budget (Subset Sum)\n");
+        printf("19. Budget Optimization (Branch-and-Bound)\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -410,6 +412,58 @@ int main() {
                 );
                 break;
 
+
+            case 18: {
+                int target;
+
+                printf("Enter exact target budget (lakh): ");
+
+                if (scanf("%d", &target) != 1) {
+                    printf("Invalid target budget.\n");
+                    break;
+                }
+
+                subsetSum(
+                    interventions,
+                    interventionCount,
+                    target
+                );
+
+                break;
+            }
+
+
+            case 19: {
+                int budget;
+                int method;
+
+                printf("Enter conservation budget (lakh): ");
+
+                if (scanf("%d", &budget) != 1) {
+                    printf("Invalid budget.\n");
+                    break;
+                }
+
+                printf("\nSelect Branch-and-Bound Method:\n");
+                printf("1. FIFO\n");
+                printf("2. LIFO\n");
+                printf("3. Best-Bound\n");
+                printf("Enter choice: ");
+
+                if (scanf("%d", &method) != 1) {
+                    printf("Invalid method.\n");
+                    break;
+                }
+
+                branchBoundKnapsack(
+                    interventions,
+                    interventionCount,
+                    budget,
+                    method
+                );
+
+                break;
+            }
 
 
             case 0:

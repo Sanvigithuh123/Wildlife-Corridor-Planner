@@ -11,6 +11,7 @@
 #include "binary_search.h"
 #include "max_subarray.h"
 #include "scheduling.h"
+#include "huffman.h"
 
 int main() {
 
@@ -77,6 +78,7 @@ int main() {
         printf("10. Analyze Maximum Threat Increase\n");
         printf("11. Conservation Activity Selection\n");
         printf("12. Minimum Conservation Teams (Interval Partitioning)\n");
+        printf("13. Analyze Monitoring Data Compression (Huffman)\n");
         
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -317,6 +319,15 @@ int main() {
                     activityCount
                 );
                 break;
+
+
+            case 13: {
+                if (huffmanCompress("data/monitoring.txt") != 0) {
+                    printf("Huffman analysis failed.\n");
+                }
+
+                break;
+            }
 
 
             case 0:

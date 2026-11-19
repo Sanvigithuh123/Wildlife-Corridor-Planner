@@ -15,6 +15,7 @@
 #include "lcs.h"
 #include "bellman_ford.h"
 #include "floyd_warshall.h"
+#include "tsp.h"
 
 int main() {
 

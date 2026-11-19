@@ -17,6 +17,7 @@ int main() {
     Habitat habitats[MAX_HABITATS];
     Corridor corridors[MAX_CORRIDORS];
     Intervention interventions[MAX_INTERVENTIONS];
+    Activity activities[MAX_ACTIVITIES];
 
     int habitatCount = loadHabitats(
         "data/habitats.csv",
@@ -35,6 +36,11 @@ int main() {
         interventions,
         MAX_INTERVENTIONS
     );
+    int activityCount = loadActivities(
+        "data/activities.csv",
+        activities,
+        MAX_ACTIVITIES
+    );
 
     if (habitatCount <= 0 || corridorCount < 0) {
         printf("Failed to load project data.\n");
@@ -44,11 +50,16 @@ int main() {
         printf("Failed to load interventions.\n");
         return 1;
     }
+    if (activityCount < 0) {
+        printf("Failed to load activities.\n");
+        return 1;
+    }
 
     printf("\nData loaded successfully!\n");
     printf("Habitats: %d\n", habitatCount);
     printf("Corridors: %d\n", corridorCount);
     printf("Interventions loaded: %d\n", interventionCount);
+    printf("Activities loaded: %d\n", activityCount);
 
     int choice;
 

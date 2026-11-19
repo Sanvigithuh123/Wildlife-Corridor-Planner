@@ -304,23 +304,19 @@ int main() {
             break;
         }
 
+            case 11:
+                activitySelection(
+                    activities,
+                    activityCount
+                );
+                break;
 
-case 11:
-    activitySelection(
-        activities,
-        activityCount
-    );
-    break;
-
-case 12:
-    intervalPartitioning(
-        activities,
-        activityCount
-    );
-    break;
-
-        
-
+            case 12:
+                intervalPartitioning(
+                    activities,
+                    activityCount
+                );
+                break;
 
 
             case 0:

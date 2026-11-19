@@ -191,3 +191,26 @@ Correctness was evaluated by comparing algorithm outputs with independently dete
 Additional correctness checks should include disconnected graphs, invalid habitat IDs, blocked corridors, empty inputs, duplicate records and infeasible budgets.
 
 For algorithm comparisons, agreement in output is useful evidence, but independent small-instance oracles are also required to verify optimality.
+
+
+## 7. Recommended Production Strategy
+
+For a practical wildlife conservation planning system, algorithm selection should depend on graph density, input size, constraints and the required output.
+
+**Minimum-Cost Corridor Planning:** Kruskal is a suitable default for sparse corridor graphs because it works naturally with edge lists. Prim is an appropriate alternative, especially with an efficient priority queue.
+
+**Shortest-Path Routing:** Dijkstra is recommended for nonnegative route weights. Bellman-Ford is useful when signed weights are meaningful and negative-cycle detection is required. Floyd-Warshall is suitable for smaller networks requiring all-pairs distances.
+
+**Conservation Budget Optimization:** Dynamic-programming 0/1 Knapsack is suitable for moderate integer budgets. Branch-and-Bound provides an exact alternative when useful upper bounds reduce the search space.
+
+**Habitat Data Management:** Merge Sort provides stable and predictable sorting performance. Binary Search supports efficient lookup after a sorted habitat index has been constructed.
+
+**Corridor Capacity Analysis:** Edmonds-Karp provides a straightforward maximum-flow implementation. Larger networks may benefit from more advanced maximum-flow algorithms.
+
+**Conservation Scheduling:** Activity Selection and Interval Partitioning provide efficient greedy approaches when activities have fixed time intervals and interchangeable teams.
+
+**Inspection Tour Planning:** Exact bitmask TSP is suitable only for small habitat sets. Larger instances should use approximation or heuristic methods, with solution quality reported separately.
+
+The recommended production architecture separates data validation, graph construction, optimization algorithms, scenario analysis and result exports into reusable modules.
+
+All recommendations must respect the ecological and operational constraints represented in the data. Minimum-cost connectivity alone does not guarantee ecological suitability or capacity feasibility.

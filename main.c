@@ -10,8 +10,7 @@
 #include "sorting.h"
 #include "binary_search.h"
 #include "max_subarray.h"
-#include "fast_power.h"
-#include "celebrity.h"
+
 
 int main() {
 
@@ -65,8 +64,7 @@ int main() {
         printf("8. Sort Habitats (Quick Sort)\n");
         printf("9. Search Habitat (Binary Search)\n");
         printf("10. Analyze Maximum Threat Increase\n");
-        printf("11. Project Wildlife Population (Fast Power)\n");
-        printf("12. Find Central Reference Center (Celebrity)\n");
+        
         printf("0. Exit\n");
         printf("Enter choice: ");
 
@@ -294,66 +292,7 @@ int main() {
         }
 
 
-        case 11: {
-            double population;
-            double growthRate;
-            int years;
-
-            printf("Enter initial population: ");
-
-            if (scanf("%lf", &population) != 1) {
-                printf("Invalid population.\n");
-                break;
-            }
-
-            printf("Enter annual growth rate (percentage): ");
-
-            if (scanf("%lf", &growthRate) != 1) {
-                printf("Invalid growth rate.\n");
-                break;
-            }
-
-            printf("Enter number of years: ");
-
-            if (scanf("%d", &years) != 1) {
-                printf("Invalid years.\n");
-                break;
-            }
-
-            populationProjection(
-                population,
-                growthRate / 100.0,
-                years
-            );
-
-            break;
-        }
-
-
-        case 12: {
-            int matrix[MAX_CENTERS][MAX_CENTERS] = {
-                {0, 1, 1, 0},
-                {0, 0, 1, 0},
-                {0, 0, 0, 0},
-                {0, 1, 1, 0}
-            };
-
-            int n = 4;
-
-            int result = findCelebrity(matrix, n);
-
-            printf("\n===== CELEBRITY DISCOVERY =====\n");
-
-            if (result == -1) {
-                printf("No central reference center found.\n");
-            }
-            else {
-                printf("Central reference center: %c\n",
-                    'A' + result);
-            }
-
-            break;
-        }
+        
 
 
 

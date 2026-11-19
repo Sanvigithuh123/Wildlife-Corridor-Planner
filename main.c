@@ -135,6 +135,7 @@ int main() {
         printf("19. Budget Optimization (Branch-and-Bound)\n");
         printf("20. Analyze Corridor Capacity (Ford-Fulkerson)\n");
         printf("21. Assign Conservation Teams (Bipartite Matching)\n");
+        printf("22. Wildlife Monitoring Pattern Search\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -553,6 +554,34 @@ int main() {
 
         break;
     }
+
+
+            case 22: {
+                char text[MAX_TEXT];
+                char pattern[MAX_PATTERN];
+
+                int length = loadEventSequence(
+                    "data/event_sequence.txt",
+                    text,
+                    MAX_TEXT
+                );
+
+                if (length < 0) {
+                    printf("Failed to load event sequence.\n");
+                    break;
+                }
+
+                printf("Enter event pattern to search: ");
+
+                if (scanf("%999s", pattern) != 1) {
+                    printf("Invalid pattern.\n");
+                    break;
+                }
+
+                compareStringMatching(text, pattern);
+
+                break;
+            }
 
 
             case 0:

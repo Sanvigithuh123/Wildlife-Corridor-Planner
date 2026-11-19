@@ -1,0 +1,15 @@
+{
+  "habitats": [
+    {"id": 0, "name": "Forest_A", "population": 120, "threat": 3},
+    {"id": 1, "name": "Forest_B", "population": 80, "threat": 5},
+    {"id": 2, "name": "Forest_C", "population": 150, "threat": 2},
+    {"id": 3, "name": "Forest_D", "population": 60, "threat": 8}
+  ],
+  "corridors": [
+    {"source": 0, "destination": 1, "cost": 4, "capacity": 50, "available": 1},
+    {"source": 0, "destination": 2, "cost": 2, "capacity": 30, "available": 1},
+    {"source": 1, "destination": 3, "cost": 3, "capacity": 40, "available": 1},
+    {"source": 2, "destination": 3, "cost": 5, "capacity": 25, "available": 1},
+    {"source": 0, "destination": 3, "cost": 7, "capacity": 60, "available": 1}
+  ]
+}

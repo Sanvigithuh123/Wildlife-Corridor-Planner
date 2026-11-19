@@ -21,6 +21,9 @@
 #include "ford_fulkerson.h"
 #include "bipartite_matching.h"
 #include "string_matching.h"
+#include "scenario.h"
+#include "benchmark.h"
+#include "export.h"
 
 static int loadEventSequence(
     const char *filename,
@@ -136,6 +139,11 @@ int main() {
         printf("20. Analyze Corridor Capacity (Ford-Fulkerson)\n");
         printf("21. Assign Conservation Teams (Bipartite Matching)\n");
         printf("22. Wildlife Monitoring Pattern Search\n");
+        printf("23. Normal Conservation Scenario\n");
+        printf("24. Corridor Constraint Shock Scenario\n");
+        printf("25. Sorting Benchmark\n");
+        printf("26. Export Network to CSV\n");
+        printf("27. Export Network to JSON\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -582,6 +590,50 @@ int main() {
 
                 break;
             }
+
+
+        case 23:
+            runNormalScenario(
+                habitats,
+                habitatCount,
+                corridors,
+                corridorCount
+            );
+            break;
+
+        case 24:
+            runShockScenario(
+                habitats,
+                habitatCount,
+                corridors,
+                corridorCount
+            );
+            break;
+
+        case 25:
+            benchmarkSorting(
+                habitats,
+                habitatCount
+            );
+            break;
+
+        case 26:
+            exportCSV(
+                habitats,
+                habitatCount,
+                corridors,
+                corridorCount
+            );
+            break;
+
+        case 27:
+            exportJSON(
+                habitats,
+                habitatCount,
+                corridors,
+                corridorCount
+            );
+            break;
 
 
             case 0:

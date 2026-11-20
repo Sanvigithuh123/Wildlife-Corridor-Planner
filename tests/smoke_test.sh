@@ -43,7 +43,7 @@ run_test "Knapsack Budget" \
 
 
 run_test "Maximum Flow" \
-    "20\n0\n3\n0\n" \
+    "13\n0\n3\n0\n" \
     "Maximum Flow: 125"
 
 echo "All smoke tests passed."

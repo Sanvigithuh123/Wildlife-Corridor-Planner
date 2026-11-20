@@ -124,7 +124,6 @@ int main() {
         printf("10. Analyze Maximum Threat Increase\n");
         printf("11. Conservation Activity Selection\n");
         printf("15. Shortest Route (Bellman-Ford)\n");
-        printf("17. Optimize Ranger Inspection Tour (TSP)\n");
         printf("18. Exact Conservation Budget (Subset Sum)\n");
         printf("19. Budget Optimization (Branch-and-Bound)\n");
         printf("20. Analyze Corridor Capacity (Ford-Fulkerson)\n");

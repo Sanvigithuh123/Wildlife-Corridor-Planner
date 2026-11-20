@@ -1,0 +1,714 @@
+WILDLIFE CORRIDOR ALGORITHM COMPARISONS
+======================================
+
+===== KRUSKAL MST =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: 
+===== KRUSKAL MST =====
+Selected Wildlife Corridors:
+Forest_A -> Forest_C | Cost: 2
+Forest_B -> Forest_D | Cost: 3
+Forest_A -> Forest_B | Cost: 4
+
+Total Minimum Cost: 9
+All habitats connected successfully.
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== PRIM MST =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: 
+===== PRIM MST =====
+Selected Wildlife Corridors:
+Forest_A -> Forest_B | Cost: 4
+Forest_A -> Forest_C | Cost: 2
+Forest_B -> Forest_D | Cost: 3
+
+Total Minimum Cost: 9
+All habitats connected successfully.
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== DIJKSTRA 0 TO 3 =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter source habitat ID: Enter destination habitat ID: 
+===== DIJKSTRA SHORTEST PATH =====
+Source: Forest_A
+Destination: Forest_D
+Minimum Route Weight: 7
+Route: Forest_A -> Forest_D
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== BELLMAN-FORD 0 TO 3 =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter source habitat ID: Enter destination habitat ID: 
+===== BELLMAN-FORD =====
+Source: Forest_A
+Destination: Forest_D
+Minimum Route Weight: 7
+Route: Forest_A -> Forest_B -> Forest_D
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== DP KNAPSACK - BUDGET 10 =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter conservation budget (in lakh): 
+===== CONSERVATION BUDGET OPTIMIZATION =====
+Available Budget: 10 lakh
+Maximum Benefit: 25
+
+Selected Interventions:
+Wildlife_Cameras | Cost: 3 | Benefit: 7
+Water_Stations | Cost: 5 | Benefit: 12
+Anti_Poaching_Patrol | Cost: 2 | Benefit: 6
+
+Total Budget Used: 10 lakh
+Remaining Budget: 0 lakh
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== FIFO BRANCH AND BOUND =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter conservation budget (lakh): 
+Select Branch-and-Bound Method:
+1. FIFO
+2. LIFO
+3. Best-Bound
+Enter choice: 
+===== FIFO BRANCH-AND-BOUND =====
+Available Budget: 10 lakh
+Maximum Benefit: 25
+
+Selected Interventions:
+Anti_Poaching_Patrol | Cost: 2 | Benefit: 6
+Water_Stations | Cost: 5 | Benefit: 12
+Wildlife_Cameras | Cost: 3 | Benefit: 7
+
+Total Budget Used: 10 lakh
+Nodes Explored: 15
+Branches Pruned: 12
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== LIFO BRANCH AND BOUND =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter conservation budget (lakh): 
+Select Branch-and-Bound Method:
+1. FIFO
+2. LIFO
+3. Best-Bound
+Enter choice: 
+===== LIFO BRANCH-AND-BOUND =====
+Available Budget: 10 lakh
+Maximum Benefit: 25
+
+Selected Interventions:
+Anti_Poaching_Patrol | Cost: 2 | Benefit: 6
+Water_Stations | Cost: 5 | Benefit: 12
+Wildlife_Cameras | Cost: 3 | Benefit: 7
+
+Total Budget Used: 10 lakh
+Nodes Explored: 24
+Branches Pruned: 24
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== BEST-BOUND BRANCH AND BOUND =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter conservation budget (lakh): 
+Select Branch-and-Bound Method:
+1. FIFO
+2. LIFO
+3. Best-Bound
+Enter choice: 
+===== BEST-BOUND BRANCH-AND-BOUND =====
+Available Budget: 10 lakh
+Maximum Benefit: 25
+
+Selected Interventions:
+Anti_Poaching_Patrol | Cost: 2 | Benefit: 6
+Water_Stations | Cost: 5 | Benefit: 12
+Wildlife_Cameras | Cost: 3 | Benefit: 7
+
+Total Budget Used: 10 lakh
+Nodes Explored: 10
+Branches Pruned: 9
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== MERGE SORT BY THREAT =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: 
+Sort habitats by:
+1. ID
+2. Population
+3. Threat Level
+Enter choice: 
+===== MERGE SORT RESULT =====
+
+===== HABITAT RECORDS =====
+ID: 2 | Name: Forest_C | Population: 150 | Threat: 2
+ID: 0 | Name: Forest_A | Population: 120 | Threat: 3
+ID: 1 | Name: Forest_B | Population: 80 | Threat: 5
+ID: 3 | Name: Forest_D | Population: 60 | Threat: 8
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...
+
+===== QUICK SORT BY THREAT =====
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: 
+Sort habitats by:
+1. ID
+2. Population
+3. Threat Level
+Enter choice: 
+===== QUICK SORT RESULT =====
+
+===== HABITAT RECORDS =====
+ID: 2 | Name: Forest_C | Population: 150 | Threat: 2
+ID: 0 | Name: Forest_A | Population: 120 | Threat: 3
+ID: 1 | Name: Forest_B | Population: 80 | Threat: 5
+ID: 3 | Name: Forest_D | Population: 60 | Threat: 8
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+11. Conservation Activity Selection
+15. Shortest Route (Bellman-Ford)
+19. Budget Optimization (Branch-and-Bound)
+20. Analyze Corridor Capacity (Ford-Fulkerson)
+21. Assign Conservation Teams (Bipartite Matching)
+23. Normal Conservation Scenario
+24. Corridor Constraint Shock Scenario
+25. Sorting Benchmark
+26. Export Network to CSV
+27. Export Network to JSON
+28. Large Data Stress Benchmark
+29. Conservation Priority Ranking
+30. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...

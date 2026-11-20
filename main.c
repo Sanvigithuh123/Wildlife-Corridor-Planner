@@ -488,14 +488,14 @@ int main() {
             );
             break;
 
-        case 25:
+        case 17:
             benchmarkSorting(
                 habitats,
                 habitatCount
             );
             break;
 
-        case 26:
+        case 18:
             exportCSV(
                 habitats,
                 habitatCount,
@@ -504,7 +504,7 @@ int main() {
             );
             break;
 
-        case 27:
+        case 19:
             exportJSON(
                 habitats,
                 habitatCount,
@@ -513,12 +513,12 @@ int main() {
             );
             break;
 
-            case 28:
+            case 20:
                 benchmarkGraphSizes();
                 break;
 
 
-            case 29:
+            case 21:
                 rankHabitats(
                     habitats,
                     habitatCount
@@ -526,7 +526,7 @@ int main() {
                 break;
 
 
-            case 30: {
+            case 22: {
                 int budget;
 
                 printf("Enter conservation budget (lakh): ");

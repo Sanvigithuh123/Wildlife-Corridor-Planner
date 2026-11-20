@@ -481,33 +481,7 @@ int main() {
     }
 
 
-            case 22: {
-                char text[MAX_TEXT];
-                char pattern[MAX_PATTERN];
-
-                int length = loadEventSequence(
-                    "data/event_sequence.txt",
-                    text,
-                    MAX_TEXT
-                );
-
-                if (length < 0) {
-                    printf("Failed to load event sequence.\n");
-                    break;
-                }
-
-                printf("Enter event pattern to search: ");
-
-                if (scanf("%999s", pattern) != 1) {
-                    printf("Invalid pattern.\n");
-                    break;
-                }
-
-                compareStringMatching(text, pattern);
-
-                break;
-            }
-
+        
 
         case 23:
             runNormalScenario(

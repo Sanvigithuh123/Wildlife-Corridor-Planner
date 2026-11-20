@@ -19,19 +19,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: 
 ===== KRUSKAL MST =====
@@ -53,19 +53,19 @@ All habitats connected successfully.
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -87,19 +87,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: 
 ===== PRIM MST =====
@@ -121,19 +121,19 @@ All habitats connected successfully.
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -155,19 +155,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Enter source habitat ID: Enter destination habitat ID: 
 ===== DIJKSTRA SHORTEST PATH =====
@@ -186,19 +186,19 @@ Route: Forest_A -> Forest_D
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -220,19 +220,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Enter source habitat ID: Enter destination habitat ID: 
 ===== BELLMAN-FORD =====
@@ -251,19 +251,19 @@ Route: Forest_A -> Forest_B -> Forest_D
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -285,19 +285,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Enter conservation budget (in lakh): 
 ===== CONSERVATION BUDGET OPTIMIZATION =====
@@ -322,19 +322,19 @@ Remaining Budget: 0 lakh
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -356,19 +356,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Enter conservation budget (lakh): 
 Select Branch-and-Bound Method:
@@ -399,19 +399,19 @@ Branches Pruned: 12
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -433,19 +433,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Enter conservation budget (lakh): 
 Select Branch-and-Bound Method:
@@ -476,19 +476,19 @@ Branches Pruned: 24
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -510,19 +510,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Enter conservation budget (lakh): 
 Select Branch-and-Bound Method:
@@ -553,19 +553,19 @@ Branches Pruned: 9
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -587,19 +587,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: 
 Sort habitats by:
@@ -625,19 +625,19 @@ ID: 3 | Name: Forest_D | Population: 60 | Threat: 8
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...
 
@@ -659,19 +659,19 @@ Activities loaded: 5
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: 
 Sort habitats by:
@@ -697,18 +697,18 @@ ID: 3 | Name: Forest_D | Population: 60 | Threat: 8
 7. Sort Habitats (Merge Sort)
 8. Sort Habitats (Quick Sort)
 9. Search Habitat (Binary Search)
-11. Conservation Activity Selection
-15. Shortest Route (Bellman-Ford)
-19. Budget Optimization (Branch-and-Bound)
-20. Analyze Corridor Capacity (Ford-Fulkerson)
-21. Assign Conservation Teams (Bipartite Matching)
-23. Normal Conservation Scenario
-24. Corridor Constraint Shock Scenario
-25. Sorting Benchmark
-26. Export Network to CSV
-27. Export Network to JSON
-28. Large Data Stress Benchmark
-29. Conservation Priority Ranking
-30. Export Conservation Recommendations
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
 0. Exit
 Enter choice: Exiting program...

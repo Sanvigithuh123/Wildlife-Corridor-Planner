@@ -1,0 +1,60 @@
+
+Data loaded successfully!
+Habitats: 4
+Corridors: 5
+Interventions loaded: 5
+Activities loaded: 5
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
+0. Exit
+Enter choice: Enter conservation budget (lakh): Recommended corridors: 3 | MST cost: 9 | Connected: yes
+Budget used: 10/10 | Maximum benefit: 25
+Saved: output/recommended_corridors.csv and output/recommended_interventions.csv
+
+===== WILDLIFE CORRIDOR PLANNER =====
+1. Display Habitats
+2. Display Corridors
+3. Find Minimum Cost Corridors (Kruskal)
+4. Find Minimum Cost Corridors (Prim)
+5. Find Shortest Wildlife Route (Dijkstra)
+6. Optimize Conservation Budget (0/1 Knapsack)
+7. Sort Habitats (Merge Sort)
+8. Sort Habitats (Quick Sort)
+9. Search Habitat (Binary Search)
+10. Conservation Activity Selection
+11. Shortest Route (Bellman-Ford)
+12. Budget Optimization (Branch-and-Bound)
+13. Analyze Corridor Capacity (Ford-Fulkerson)
+14. Assign Conservation Teams (Bipartite Matching)
+15. Normal Conservation Scenario
+16. Corridor Constraint Shock Scenario
+17. Sorting Benchmark
+18. Export Network to CSV
+19. Export Network to JSON
+20. Large Data Stress Benchmark
+21. Conservation Priority Ranking
+22. Export Conservation Recommendations
+0. Exit
+Enter choice: Exiting program...

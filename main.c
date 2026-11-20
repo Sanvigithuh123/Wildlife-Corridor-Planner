@@ -6,7 +6,6 @@
 #include "prim.h"
 #include "dijkstra.h"
 #include "knapsack.h"
-#include <string.h>
 #include "sorting.h"
 #include "binary_search.h"
 #include "scheduling.h"

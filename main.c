@@ -637,8 +637,8 @@ int main() {
             break;
 
             case 28:
-    benchmarkGraphSizes();
-    break;
+                benchmarkGraphSizes();
+                break;
 
 
             case 0:

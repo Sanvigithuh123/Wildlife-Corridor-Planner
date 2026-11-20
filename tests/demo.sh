@@ -20,7 +20,7 @@ printf "6\n10\n0\n" | ./wildlife
 
 echo ""
 echo "4. Conservation scheduling"
-printf "11\n12\n0\n" | ./wildlife
+printf "11\n0\n" | ./wildlife
 
 echo ""
 echo "5. Maximum corridor flow"

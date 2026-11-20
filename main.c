@@ -121,11 +121,9 @@ int main() {
         printf("9. Search Habitat (Binary Search)\n");
         printf("11. Conservation Activity Selection\n");
         printf("15. Shortest Route (Bellman-Ford)\n");
-        printf("18. Exact Conservation Budget (Subset Sum)\n");
         printf("19. Budget Optimization (Branch-and-Bound)\n");
         printf("20. Analyze Corridor Capacity (Ford-Fulkerson)\n");
         printf("21. Assign Conservation Teams (Bipartite Matching)\n");
-        printf("22. Wildlife Monitoring Pattern Search\n");
         printf("23. Normal Conservation Scenario\n");
         printf("24. Corridor Constraint Shock Scenario\n");
         printf("25. Sorting Benchmark\n");

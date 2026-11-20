@@ -9,13 +9,8 @@
 #include <string.h>
 #include "sorting.h"
 #include "binary_search.h"
-#include "max_subarray.h"
 #include "scheduling.h"
-#include "huffman.h"
-#include "lcs.h"
 #include "bellman_ford.h"
-#include "floyd_warshall.h"
-#include "tsp.h"
 #include "subset_sum.h"
 #include "branch_bound.h"
 #include "ford_fulkerson.h"

@@ -144,6 +144,7 @@ int main() {
         printf("25. Sorting Benchmark\n");
         printf("26. Export Network to CSV\n");
         printf("27. Export Network to JSON\n");
+        printf("28. Large Data Stress Benchmark\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -634,6 +635,10 @@ int main() {
                 corridorCount
             );
             break;
+
+            case 28:
+    benchmarkGraphSizes();
+    break;
 
 
             case 0:

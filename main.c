@@ -121,10 +121,10 @@ int main() {
         printf("7. Sort Habitats (Merge Sort)\n");
         printf("8. Sort Habitats (Quick Sort)\n");
         printf("9. Search Habitat (Binary Search)\n");
-        printf("11. Conservation Activity Selection\n");
-        printf("15. Shortest Route (Bellman-Ford)\n");
-        printf("19. Budget Optimization (Branch-and-Bound)\n");
-        printf("20. Analyze Corridor Capacity (Ford-Fulkerson)\n");
+        printf("10. Conservation Activity Selection\n");
+        printf("11. Shortest Route (Bellman-Ford)\n");
+        printf("12. Budget Optimization (Branch-and-Bound)\n");
+        printf("13. Analyze Corridor Capacity (Ford-Fulkerson)\n");
         printf("21. Assign Conservation Teams (Bipartite Matching)\n");
         printf("23. Normal Conservation Scenario\n");
         printf("24. Corridor Constraint Shock Scenario\n");

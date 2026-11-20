@@ -17,6 +17,20 @@ int loadInterventions(
     int maxItems
 );
 
+typedef struct {
+    int selected[MAX_INTERVENTIONS];
+    int selectedCount;
+    int totalCost;
+    long long maxBenefit;
+} BudgetResult;
+
+int calculateKnapsack(
+    const Intervention items[],
+    int n,
+    int budget,
+    BudgetResult *result
+);
+
 void optimizeBudget(
     Intervention items[],
     int n,

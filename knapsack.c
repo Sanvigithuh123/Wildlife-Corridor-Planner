@@ -25,7 +25,6 @@ int loadInterventions(
     }
 
     while (fgets(line, sizeof(line), fp)) {
-
         if (count >= maxItems) {
             printf("Too many interventions.\n");
             fclose(fp);
@@ -67,104 +66,93 @@ int loadInterventions(
     return count;
 }
 
+int calculateKnapsack(
+    const Intervention items[],
+    int n,
+    int budget,
+    BudgetResult *out
+) {
+    if (!items || !out || n < 0 ||
+        n > MAX_INTERVENTIONS ||
+        budget < 0 || budget > 10000)
+        return -1;
+
+    *out = (BudgetResult){0};
+
+    size_t cols = (size_t)budget + 1;
+    size_t rows = (size_t)n + 1;
+
+    long long *dp = calloc(
+        rows * cols, sizeof(*dp)
+    );
+    if (!dp) return -1;
+
+    #define DP(i,w) dp[(size_t)(i)*cols+(size_t)(w)]
+
+    for (int i = 1; i <= n; i++) {
+        int cost = items[i - 1].cost;
+        int benefit = items[i - 1].benefit;
+
+        if (cost <= 0 || benefit < 0) {
+            free(dp);
+            return -1;
+        }
+
+        for (int w = 0; w <= budget; w++) {
+            DP(i,w) = DP(i-1,w);
+
+            if (cost <= w &&
+                DP(i-1,w-cost) + benefit > DP(i,w)) {
+                DP(i,w) = DP(i-1,w-cost) + benefit;
+            }
+        }
+    }
+
+    out->maxBenefit = DP(n,budget);
+    int w = budget;
+
+    for (int i = n; i > 0; i--) {
+        if (DP(i,w) != DP(i-1,w)) {
+            out->selected[i-1] = 1;
+            out->selectedCount++;
+            out->totalCost += items[i-1].cost;
+            w -= items[i-1].cost;
+        }
+    }
+
+    free(dp);
+    #undef DP
+    return 0;
+}
+
 void optimizeBudget(
     Intervention items[],
     int n,
     int budget
 ) {
-    if (n <= 0 || n > MAX_INTERVENTIONS ||
-        budget < 0 || budget > 10000) {
-        printf("Invalid budget or item count.\n");
+    BudgetResult r;
+
+    if (calculateKnapsack(items, n, budget, &r)) {
+        puts("Invalid budget, items, or allocation failure.");
         return;
     }
 
-    // Allocate DP table dynamically
-    long long **dp = malloc(
-        (size_t)(n + 1) * sizeof(long long *)
-    );
-
-    if (dp == NULL) {
-        printf("Memory allocation failed.\n");
-        return;
-    }
-
-    for (int i = 0; i <= n; i++) {
-
-        dp[i] = calloc(
-            (size_t)(budget + 1),
-            sizeof(long long)
-        );
-
-        if (dp[i] == NULL) {
-            for (int j = 0; j < i; j++)
-                free(dp[j]);
-
-            free(dp);
-            printf("Memory allocation failed.\n");
-            return;
-        }
-    }
-
-    // Build DP table
-    for (int i = 1; i <= n; i++) {
-
-        int cost = items[i - 1].cost;
-        int benefit = items[i - 1].benefit;
-
-        for (int w = 0; w <= budget; w++) {
-
-            // Do not select current item
-            dp[i][w] = dp[i - 1][w];
-
-            // Select item if it fits
-            if (cost <= w) {
-
-                long long take =
-                    benefit + dp[i - 1][w - cost];
-
-                if (take > dp[i][w])
-                    dp[i][w] = take;
-            }
-        }
-    }
-
-    printf("\n===== CONSERVATION BUDGET OPTIMIZATION =====\n");
+    puts("\n===== CONSERVATION BUDGET OPTIMIZATION =====");
     printf("Available Budget: %d lakh\n", budget);
-    printf("Maximum Benefit: %lld\n", dp[n][budget]);
-
-    // Reconstruct selected interventions
-    int selected[MAX_INTERVENTIONS] = {0};
-    int w = budget;
-    int totalCost = 0;
-
-    for (int i = n; i > 0; i--) {
-
-        if (dp[i][w] != dp[i - 1][w]) {
-
-            selected[i - 1] = 1;
-            w -= items[i - 1].cost;
-            totalCost += items[i - 1].cost;
-        }
-    }
-
-    printf("\nSelected Interventions:\n");
+    printf("Maximum Benefit: %lld\n", r.maxBenefit);
+    puts("\nSelected Interventions:");
 
     for (int i = 0; i < n; i++) {
-        if (selected[i]) {
-            printf(
-                "%s | Cost: %d | Benefit: %d\n",
+        if (r.selected[i]) {
+            printf("%s | Cost: %d | Benefit: %d\n",
                 items[i].name,
                 items[i].cost,
-                items[i].benefit
-            );
+                items[i].benefit);
         }
     }
 
-    printf("\nTotal Budget Used: %d lakh\n", totalCost);
-    printf("Remaining Budget: %d lakh\n", budget - totalCost);
-
-    for (int i = 0; i <= n; i++)
-        free(dp[i]);
-
-    free(dp);
+    printf("\nTotal Budget Used: %d lakh\n",
+           r.totalCost);
+    printf("Remaining Budget: %d lakh\n",
+           budget - r.totalCost);
 }

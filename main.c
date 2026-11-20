@@ -17,6 +17,7 @@
 #include "benchmark.h"
 #include "export.h"
 #include<string.h>
+#include "priority.h"
 
 static int loadEventSequence(
     const char *filename,
@@ -130,6 +131,7 @@ int main() {
         printf("26. Export Network to CSV\n");
         printf("27. Export Network to JSON\n");
         printf("28. Large Data Stress Benchmark\n");
+        printf("29. Conservation Priority Ranking\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -512,6 +514,15 @@ int main() {
             case 28:
                 benchmarkGraphSizes();
                 break;
+
+
+            case 29:
+                rankHabitats(
+                    habitats,
+                    habitatCount
+                );
+                break;
+
 
 
             case 0:

@@ -382,24 +382,7 @@ int main() {
 
 
 
-            case 18: {
-                int target;
-
-                printf("Enter exact target budget (lakh): ");
-
-                if (scanf("%d", &target) != 1) {
-                    printf("Invalid target budget.\n");
-                    break;
-                }
-
-                subsetSum(
-                    interventions,
-                    interventionCount,
-                    target
-                );
-
-                break;
-            }
+            
 
 
             case 19: {

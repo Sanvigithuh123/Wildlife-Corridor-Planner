@@ -344,22 +344,7 @@ int main() {
         }
 
 
-        case 10: {
-            int changes[] = {4, -2, 5, -7, 6, 3, -2};
-
-            int n = sizeof(changes) / sizeof(changes[0]);
-
-            printf("\nDaily Threat Index Changes:\n");
-
-            for (int i = 0; i < n; i++)
-                printf("%d ", changes[i]);
-
-            printf("\n");
-
-            maximumSubarray(changes, n);
-
-            break;
-        }
+        
 
             case 11:
                 activitySelection(
@@ -368,42 +353,7 @@ int main() {
                 );
                 break;
 
-            case 12:
-                intervalPartitioning(
-                    activities,
-                    activityCount
-                );
-                break;
-
-
-            case 13: {
-                if (huffmanCompress("data/monitoring.txt") != 0) {
-                    printf("Huffman analysis failed.\n");
-                }
-
-                break;
-            }
-
-
-            case 14: {
-                char seq1[101];
-                char seq2[101];
-
-                printf("Enter first habitat movement sequence: ");
-                if (scanf("%100s", seq1) != 1) {
-                    printf("Invalid sequence.\n");
-                    break;
-                }
-
-                printf("Enter second habitat movement sequence: ");
-                if (scanf("%100s", seq2) != 1) {
-                    printf("Invalid sequence.\n");
-                    break;
-                }
-
-                longestCommonSubsequence(seq1, seq2);
-                break;
-            }
+            
 
 
             case 15: {
@@ -435,25 +385,6 @@ int main() {
                 break;
             }
 
-
-            case 16:
-                floydWarshall(
-                    habitats,
-                    habitatCount,
-                    corridors,
-                    corridorCount
-                );
-                break;
-
-
-            case 17:
-                solveTSP(
-                    habitats,
-                    habitatCount,
-                    corridors,
-                    corridorCount
-                );
-                break;
 
 
             case 18: {

@@ -123,11 +123,7 @@ int main() {
         printf("9. Search Habitat (Binary Search)\n");
         printf("10. Analyze Maximum Threat Increase\n");
         printf("11. Conservation Activity Selection\n");
-        printf("12. Minimum Conservation Teams (Interval Partitioning)\n");
-        printf("13. Analyze Monitoring Data Compression (Huffman)\n");
-        printf("14. Compare Wildlife Movement Sequences (LCS)\n");
         printf("15. Shortest Route (Bellman-Ford)\n");
-        printf("16. All-Pairs Shortest Routes (Floyd-Warshall)\n");
         printf("17. Optimize Ranger Inspection Tour (TSP)\n");
         printf("18. Exact Conservation Budget (Subset Sum)\n");
         printf("19. Budget Optimization (Branch-and-Bound)\n");

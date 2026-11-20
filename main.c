@@ -16,7 +16,7 @@
 #include "scenario.h"
 #include "benchmark.h"
 #include "export.h"
-
+#include<string.h>
 
 static int loadEventSequence(
     const char *filename,

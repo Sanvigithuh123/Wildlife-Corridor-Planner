@@ -121,7 +121,6 @@ int main() {
         printf("7. Sort Habitats (Merge Sort)\n");
         printf("8. Sort Habitats (Quick Sort)\n");
         printf("9. Search Habitat (Binary Search)\n");
-        printf("10. Analyze Maximum Threat Increase\n");
         printf("11. Conservation Activity Selection\n");
         printf("15. Shortest Route (Bellman-Ford)\n");
         printf("18. Exact Conservation Budget (Subset Sum)\n");

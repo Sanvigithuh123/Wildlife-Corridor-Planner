@@ -18,6 +18,7 @@
 #include "export.h"
 #include<string.h>
 #include "priority.h"
+#include "recommendations.h"
 
 static int loadEventSequence(
     const char *filename,
@@ -132,6 +133,7 @@ int main() {
         printf("27. Export Network to JSON\n");
         printf("28. Large Data Stress Benchmark\n");
         printf("29. Conservation Priority Ranking\n");
+        printf("30. Export Conservation Recommendations\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -523,6 +525,29 @@ int main() {
                 );
                 break;
 
+
+            case 30: {
+                int budget;
+
+                printf("Enter conservation budget (lakh): ");
+
+                if (scanf("%d", &budget) != 1) {
+                    puts("Invalid budget.");
+                    break;
+                }
+
+                exportRecommendations(
+                    habitats,
+                    habitatCount,
+                    corridors,
+                    corridorCount,
+                    interventions,
+                    interventionCount,
+                    budget
+                );
+
+                break;
+            }
 
 
             case 0:

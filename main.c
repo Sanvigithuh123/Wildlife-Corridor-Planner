@@ -125,15 +125,15 @@ int main() {
         printf("11. Shortest Route (Bellman-Ford)\n");
         printf("12. Budget Optimization (Branch-and-Bound)\n");
         printf("13. Analyze Corridor Capacity (Ford-Fulkerson)\n");
-        printf("21. Assign Conservation Teams (Bipartite Matching)\n");
-        printf("23. Normal Conservation Scenario\n");
-        printf("24. Corridor Constraint Shock Scenario\n");
-        printf("25. Sorting Benchmark\n");
-        printf("26. Export Network to CSV\n");
-        printf("27. Export Network to JSON\n");
-        printf("28. Large Data Stress Benchmark\n");
-        printf("29. Conservation Priority Ranking\n");
-        printf("30. Export Conservation Recommendations\n");
+        printf("14. Assign Conservation Teams (Bipartite Matching)\n");
+        printf("15. Normal Conservation Scenario\n");
+        printf("16. Corridor Constraint Shock Scenario\n");
+        printf("17. Sorting Benchmark\n");
+        printf("18. Export Network to CSV\n");
+        printf("19. Export Network to JSON\n");
+        printf("20. Large Data Stress Benchmark\n");
+        printf("21. Conservation Priority Ranking\n");
+        printf("22. Export Conservation Recommendations\n");
                 
         printf("0. Exit\n");
         printf("Enter choice: ");
@@ -346,7 +346,7 @@ int main() {
 
         
 
-            case 11:
+            case 10:
                 activitySelection(
                     activities,
                     activityCount
@@ -356,7 +356,7 @@ int main() {
             
 
 
-            case 15: {
+            case 11: {
                 int sourceId, destinationId;
 
                 printf("Enter source habitat ID: ");
@@ -390,7 +390,7 @@ int main() {
             
 
 
-            case 19: {
+            case 12: {
                 int budget;
                 int method;
 
@@ -423,7 +423,7 @@ int main() {
             }
 
 
-    case 20: {
+    case 13: {
         int sourceId, destinationId;
 
         printf("Enter source habitat ID: ");
@@ -451,7 +451,7 @@ int main() {
     }
 
 
-    case 21: {
+    case 14: {
         int compatibility[MAX_TEAMS][MAX_TASKS] = {
             {1, 1, 0, 0},
             {0, 1, 1, 0},
@@ -470,7 +470,7 @@ int main() {
 
         
 
-        case 23:
+        case 15:
             runNormalScenario(
                 habitats,
                 habitatCount,
@@ -479,7 +479,7 @@ int main() {
             );
             break;
 
-        case 24:
+        case 16:
             runShockScenario(
                 habitats,
                 habitatCount,

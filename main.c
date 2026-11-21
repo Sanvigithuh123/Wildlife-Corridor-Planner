@@ -18,7 +18,7 @@
 #include "export.h"
 #include "priority.h"
 #include "recommendations.h"
-
+#include<string.h>
 
 
 int main() {

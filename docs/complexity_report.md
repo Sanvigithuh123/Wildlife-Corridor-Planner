@@ -249,78 +249,7 @@ Edge-case tests include invalid habitat IDs and negative conservation budgets.
 
 These tests provide evidence for the tested inputs, but do not establish correctness for every possible graph or dataset.
 
-## 10. Complexity Classes
-
-### Class P
-
-P contains decision problems solvable in polynomial time.
-
-Examples related to the project include:
-
-- Graph connectivity
-- Minimum spanning-tree decision
-- Shortest-path decision under appropriate assumptions
-
-### Class NP
-
-NP contains decision problems for which proposed yes-solutions can be verified in polynomial time.
-
-### NP-Hard
-
-An NP-hard problem is at least as hard as every problem in NP under polynomial-time reductions.
-
-0/1 Knapsack optimization is NP-hard.
-
-### NP-Complete
-
-A problem is NP-complete if it belongs to NP and is NP-hard.
-
-Examples include:
-
-- Subset Sum decision
-- 0/1 Knapsack decision
-- Travelling Salesman decision
-
-These examples are used for theoretical analysis; they are not all implemented in the final application.
-
-## 11. Polynomial-Time Reduction
-
-### Subset Sum to 0/1 Knapsack Decision
-
-Consider a Subset Sum instance with positive integers:
-
-a1, a2, ..., an
-
-and target B.
-
-Construct a 0/1 Knapsack decision instance where:
-
-- Weight of item i = ai
-- Value of item i = ai
-- Knapsack capacity = B
-- Required total value = B
-
-A feasible Knapsack solution must satisfy:
-
-Total weight <= B
-
-and:
-
-Total value >= B
-
-Since weights and values are identical, both conditions hold exactly when:
-
-Total selected sum = B
-
-Therefore:
-
-Subset Sum <=p 0/1 Knapsack Decision
-
-This is a polynomial-time reduction.
-
-Subset Sum is included here only as a theoretical reduction source, not as an implemented final application module.
-
-## 12. Recommended Production Strategy
+## 10. Recommended Production Strategy
 
 ### Minimum-Cost Corridor Planning
 
@@ -356,7 +285,7 @@ Activity Selection helps choose compatible non-overlapping activities.
 
 Maximum Bipartite Matching assigns teams to compatible tasks.
 
-## 13. Limitations
+## 11. Limitations
 
 - The original assignment lists additional algorithms excluded from the reduced project scope.
 - The dataset is illustrative and does not model detailed species-specific habitat suitability.
@@ -366,7 +295,7 @@ Maximum Bipartite Matching assigns teams to compatible tasks.
 - Complete algorithm-level runtime and memory benchmarking remains future work.
 - Additional adversarial datasets and direct function-level tests would strengthen correctness evidence.
 
-## 14. Conclusion
+## 12. Conclusion
 
 The Wildlife Corridor and Conservation Priority Planner demonstrates the application of graph algorithms, greedy methods, dynamic programming, branch-and-bound, sorting, searching and network flow to conservation-planning problems.
 
